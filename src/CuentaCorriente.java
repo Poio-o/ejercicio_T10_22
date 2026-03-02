@@ -28,7 +28,8 @@ public class CuentaCorriente {
         cuenta.saldo += dinero;
         this.saldo -= dinero;
         movimientos.add(String.format("Transf. recibida de %s € de la cuenta %s Saldo: %s", dinero, cuenta.id, saldo));
-        cuenta.movimientos.add(String.format("Transf. emitida de %s € a la cuenta %s Saldo: %s", dinero, id, cuenta.saldo));
+        cuenta.movimientos
+                .add(String.format("Transf. emitida de %s € a la cuenta %s Saldo: %s", dinero, id, cuenta.saldo));
     }
 
     public void movimientos() {
